@@ -26,5 +26,8 @@ h1 {
 }
 /////////////////////////// BUTTON ///////////////////////////////////////
 .inline {
-  display: inline-block;
+  display: inline-table;
+  border-style: dashed;
+  background-color: #FFFFF7;
+  // padding-left: 15px;
 }

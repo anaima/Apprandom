@@ -33164,3 +33164,508 @@ Processing by GroupsController#index as HTML
   [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
   Rendered groups/index.html.erb within layouts/application (22.0ms)
 Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 09:34:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.8ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (68.2ms)
+Completed 200 OK in 792ms (Views: 745.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/aleatoire" for 127.0.0.1 at 2016-02-18 09:34:17 +0100
+Processing by GroupsController#Rand as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "people" SET "sensei" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["sensei", "f"], ["updated_at", "2016-02-18 08:34:17.812649"], ["id", 51]]
+  [1m[35m (25.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "people" SET "sensei" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["sensei", "f"], ["updated_at", "2016-02-18 08:34:17.880058"], ["id", 53]]
+  [1m[36m (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT "people".* FROM "people"
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 59]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 08:34:17.916374"], ["id", 59]]
+  [1m[35m (8.2ms)[0m  COMMIT
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 69]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 08:34:17.930887"], ["id", 69]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 08:34:17.938947"], ["id", 51]]
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 48]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 53]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 25], ["updated_at", "2016-02-18 08:34:17.952161"], ["id", 53]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 62]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 61]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 08:34:17.967764"], ["id", 61]]
+  [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 57]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 08:34:17.980323"], ["id", 57]]
+  [1m[36m (11.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 50]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 08:34:17.996788"], ["id", 50]]
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 52]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 25], ["updated_at", "2016-02-18 08:34:18.005103"], ["id", 52]]
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 67]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 08:34:18.015899"], ["id", 67]]
+  [1m[35m (9.6ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 47]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 08:34:18.030506"], ["id", 47]]
+  [1m[35m (3.3ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 68]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 66]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 08:34:18.041924"], ["id", 66]]
+  [1m[36m (8.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 49]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 25], ["updated_at", "2016-02-18 08:34:18.055060"], ["id", 49]]
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 63]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 08:34:18.065594"], ["id", 63]]
+  [1m[35m (10.2ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 54]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 08:34:18.080807"], ["id", 54]]
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 64]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 08:34:18.088619"], ["id", 64]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 60]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 08:34:18.096763"], ["id", 60]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 65]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 25], ["updated_at", "2016-02-18 08:34:18.105701"], ["id", 65]]
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 58]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 08:34:18.115419"], ["id", 58]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 56]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 08:34:18.121820"], ["id", 56]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 55]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 08:34:18.130676"], ["id", 55]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 372ms (ActiveRecord: 172.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 09:34:18 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 164ms (Views: 162.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:03:00 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (88.7ms)
+Completed 200 OK in 351ms (Views: 349.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:03:31 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 160ms (Views: 157.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:03:50 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 116ms (Views: 114.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:04:42 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:05:03 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:13:07 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 2474ms (Views: 2472.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:13:32 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aleatoire" for 127.0.0.1 at 2016-02-18 10:13:37 +0100
+Processing by GroupsController#Rand as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "people".* FROM "people"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35mGroup Load (0.9ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 68]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 09:13:37.918225"], ["id", 68]]
+  [1m[35m (43.0ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 69]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 62]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (16.6ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 09:13:37.968025"], ["id", 62]]
+  [1m[36m (27.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 49]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 09:13:38.016045"], ["id", 49]]
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 47]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 25], ["updated_at", "2016-02-18 09:13:38.024318"], ["id", 47]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.8ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 61]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 09:13:38.034012"], ["id", 61]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 67]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 09:13:38.040518"], ["id", 67]]
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 58]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 09:13:38.048673"], ["id", 58]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 66]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 60]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 25], ["updated_at", "2016-02-18 09:13:38.060395"], ["id", 60]]
+  [1m[36m (9.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 50]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 09:13:38.075383"], ["id", 50]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 52]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 09:13:38.082032"], ["id", 52]]
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 54]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 09:13:38.090982"], ["id", 54]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 55]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 09:13:38.099084"], ["id", 55]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 57]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 25], ["updated_at", "2016-02-18 09:13:38.107930"], ["id", 57]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36mGroup Load (0.7ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 48]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 09:13:38.118269"], ["id", 48]]
+  [1m[36m (9.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.7ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 53]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 09:13:38.133030"], ["id", 53]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 63]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 09:13:38.140875"], ["id", 63]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 64]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 09:13:38.148877"], ["id", 64]]
+  [1m[36m (37.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 59]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 25], ["updated_at", "2016-02-18 09:13:38.190768"], ["id", 59]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 65]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 09:13:38.200860"], ["id", 65]]
+  [1m[35m (10.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 56]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 51]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 345ms (ActiveRecord: 226.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:13:38 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 114ms (Views: 111.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:19:39 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 2328ms (Views: 2326.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:20:03 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:20:16 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.7ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:20:27 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:20:40 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 105ms (Views: 103.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:21:03 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 2269ms (Views: 2267.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:21:25 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 1847ms (Views: 1845.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:21:32 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 124ms (Views: 122.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:22:06 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.8ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 2267ms (Views: 2264.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:22:33 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 1927ms (Views: 1925.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:24:48 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:25:00 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/people/56" for 127.0.0.1 at 2016-02-18 10:25:06 +0100
+Processing by PeopleController#update as JSON
+  Parameters: {"person"=>{"sensei"=>"1"}, "authenticity_token"=>"riy8w3P5aRyn+3yOwpwDBHS5vLUPXSj/tmo/7r0uzsfQoXKxNQ8Vb2q6dufmSlfzesxZ8e+aMqPboov2oWIWWw==", "id"=>"56"}
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 56]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (16.8ms)[0m  [1mUPDATE "people" SET "sensei" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["sensei", "t"], ["updated_at", "2016-02-18 09:25:06.623146"], ["id", 56]]
+  [1m[35m (16.0ms)[0m  COMMIT
+  Rendered people/show.json.jbuilder (49.5ms)
+Completed 200 OK in 108ms (Views: 69.2ms | ActiveRecord: 33.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:25:07 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 101ms (Views: 99.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:25:21 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 135ms (Views: 133.4ms | ActiveRecord: 0.9ms)

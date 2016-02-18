@@ -3,7 +3,7 @@
   <h1>Organization</h1>
   <div class="row">
     <% @groups.each do |group| %>
-    <div class="col-md-3 inline">
+    <div class="col-md-offset-1 col-md-2 inline">
       <strong><%= group.name %>
         <%= group.salle %>
         <%= group.tache %></strong>
@@ -12,12 +12,12 @@
         <% @people.each do |gens|%>
         <% if group.id == gens.group_id %>
         <br><%= best_in_place gens, :name%>
-        <%= best_in_place gens, :sensei, :as => :select, :collection => {"1" => "Sensei", "2" => "student"} %>
+        <%= best_in_place gens, :sensei, :as => :select, :collection => {"1" => "Sensei"} %>
         <% end %>
 
         <% end %>
       </div>
-
+      <br>
       <%= link_to 'Edit', edit_group_path(group) %>
       <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
@@ -58,8 +58,9 @@
   </table>
 </div>
 <script type="text/javascript">
-$(document).ready(function() {
-/* Activating Best In Place */
-$(".best_in_place").best_in_place();
-});
+  $(document)
+    .ready(function () {
+      /* Activating Best In Place */
+      $(".best_in_place").best_in_place();
+    });
 </script>
