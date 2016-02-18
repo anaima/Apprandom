@@ -33669,3 +33669,1598 @@ Processing by GroupsController#index as HTML
   [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
   Rendered groups/index.html.erb within layouts/application (33.8ms)
 Completed 200 OK in 135ms (Views: 133.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:31:53 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 1976ms (Views: 1974.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:32:20 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.6ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 2135ms (Views: 2133.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:32:47 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 146ms (Views: 143.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:33:02 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 2010ms (Views: 2008.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:33:12 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 1822ms (Views: 1819.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:33:26 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 2214ms (Views: 2212.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:33:35 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 2075ms (Views: 2072.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2016-02-18 10:33:51 +0100
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (205.0ms)
+  Rendered groups/new.html.erb within layouts/application (271.5ms)
+Completed 200 OK in 389ms (Views: 387.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/groups" for 127.0.0.1 at 2016-02-18 10:33:55 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cNgfU7Axt+EYW5llWpKMj5LIW6Ix1mZ5GiPAlddu5FMOVdEh9sfLktUakwx+RNh4nL2+5tERfCV363SNyyI8zw==", "group"=>{"name"=>"5", "salle"=>"", "tache"=>""}, "commit"=>"Create Group"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (57.9ms)[0m  INSERT INTO "groups" ("name", "salle", "tache", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "5"], ["salle", ""], ["tache", ""], ["created_at", "2016-02-18 09:33:55.292796"], ["updated_at", "2016-02-18 09:33:55.292796"]]
+  [1m[36m (38.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 242ms (ActiveRecord: 96.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:33:55 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (1.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 90ms (Views: 87.1ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/groups/26" for 127.0.0.1 at 2016-02-18 10:33:59 +0100
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dGEUPgRoYHief5pq1NAxkvVbQP3cPPYtObT536eB+O8K7NpMQp4cC1M+kAPwBmVl+y6luTz77HFUfE3Hu80gcw==", "id"=>"26"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT 1  [["id", 26]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = $1  [["id", 26]]
+  [1m[36m (13.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 19ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:33:59 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2016-02-18 10:34:01 +0100
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (2.2ms)
+  Rendered groups/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 80ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/groups" for 127.0.0.1 at 2016-02-18 10:34:07 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pJi8VB5KO0LnhtFgX1wvuILjARM7gpeO0p2+2EFbAkPaFXImWLxHMSrH2wl7intPjJbkV9tFjdK/VQrAXRfa3w==", "group"=>{"name"=>"5", "salle"=>"5", "tache"=>"5"}, "commit"=>"Create Group"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "groups" ("name", "salle", "tache", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "5"], ["salle", "5"], ["tache", "5"], ["created_at", "2016-02-18 09:34:07.347124"], ["updated_at", "2016-02-18 09:34:07.347124"]]
+  [1m[35m (105.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms (ActiveRecord: 105.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 10:34:08 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/groups/27" for 127.0.0.1 at 2016-02-18 10:34:18 +0100
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iMDeYsTHXlbJui4FPg37PYm3lAhFOvyHc2105oJNUrn2TRAQgjEiJQT7JGwa26/Kh8JxTKX95tsepcD+ngGKJQ==", "id"=>"27"}
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = $1[0m  [["id", 27]]
+  [1m[35m (29.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 34ms (ActiveRecord: 30.2ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:34:18 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 73ms (Views: 71.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:34:57 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (1.9ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1987ms (Views: 1983.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:35:46 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 1782ms (Views: 1779.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:36:49 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:38:21 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 1876ms (Views: 1873.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:38:58 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.6ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 2006ms (Views: 2002.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:39:35 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 1819ms (Views: 1816.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:40:01 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 1926ms (Views: 1924.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:40:13 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 2085ms (Views: 2083.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:40:35 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 2238ms (Views: 2236.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:41:08 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 1987ms (Views: 1985.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:41:17 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 1951ms (Views: 1949.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:42:01 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 1701ms (Views: 1699.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:43:04 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 703ms (ActiveRecord: 1.0ms)
+
+Sass::SyntaxError - Invalid CSS after "  background-color": expected ";", was ": #FFFFA7;":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:775:in `block in try_declaration'
+  sass (3.4.21) lib/sass/scss/parser.rb:1155:in `rethrow'
+  sass (3.4.21) lib/sass/scss/parser.rb:780:in `try_declaration'
+  sass (3.4.21) lib/sass/scss/parser.rb:709:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:309:in `to_tree'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+  sass (3.4.21) lib/sass/stack.rb:88:in `block in with_import'
+  sass (3.4.21) lib/sass/stack.rb:115:in `with_frame'
+  sass (3.4.21) lib/sass/stack.rb:88:in `with_import'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+  sass (3.4.21) lib/sass/stack.rb:79:in `block in with_base'
+  sass (3.4.21) lib/sass/stack.rb:115:in `with_frame'
+  sass (3.4.21) lib/sass/stack.rb:79:in `with_base'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:158:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:52:in `visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `block in visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:157:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:8:in `visit'
+  sass (3.4.21) lib/sass/tree/root_node.rb:36:in `css_tree'
+  sass (3.4.21) lib/sass/tree/root_node.rb:20:in `render'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___324473119317327555_70358499970540'
+  actionview (4.2.5.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/5dbe30aa54ea5a10/variables" for 127.0.0.1 at 2016-02-18 10:43:05 +0100
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:43:19 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (27.4ms)
+Completed 500 Internal Server Error in 883ms (ActiveRecord: 0.8ms)
+
+Sass::SyntaxError - Invalid CSS after "  background-color": expected ";", was ": #FFFFA7;":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:775:in `block in try_declaration'
+  sass (3.4.21) lib/sass/scss/parser.rb:1155:in `rethrow'
+  sass (3.4.21) lib/sass/scss/parser.rb:780:in `try_declaration'
+  sass (3.4.21) lib/sass/scss/parser.rb:709:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:309:in `to_tree'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+  sass (3.4.21) lib/sass/stack.rb:88:in `block in with_import'
+  sass (3.4.21) lib/sass/stack.rb:115:in `with_frame'
+  sass (3.4.21) lib/sass/stack.rb:88:in `with_import'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+  sass (3.4.21) lib/sass/stack.rb:79:in `block in with_base'
+  sass (3.4.21) lib/sass/stack.rb:115:in `with_frame'
+  sass (3.4.21) lib/sass/stack.rb:79:in `with_base'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:158:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:52:in `visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `block in visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:157:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:8:in `visit'
+  sass (3.4.21) lib/sass/tree/root_node.rb:36:in `css_tree'
+  sass (3.4.21) lib/sass/tree/root_node.rb:20:in `render'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___324473119317327555_70358499970540'
+  actionview (4.2.5.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/d31d6958ee756a52/variables" for 127.0.0.1 at 2016-02-18 10:43:21 +0100
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:43:35 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (25.8ms)
+Completed 500 Internal Server Error in 744ms (ActiveRecord: 0.8ms)
+
+Sass::SyntaxError - Invalid CSS after "  background-color": expected ";", was ": #FFFFA7;":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:775:in `block in try_declaration'
+  sass (3.4.21) lib/sass/scss/parser.rb:1155:in `rethrow'
+  sass (3.4.21) lib/sass/scss/parser.rb:780:in `try_declaration'
+  sass (3.4.21) lib/sass/scss/parser.rb:709:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:309:in `to_tree'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+  sass (3.4.21) lib/sass/stack.rb:88:in `block in with_import'
+  sass (3.4.21) lib/sass/stack.rb:115:in `with_frame'
+  sass (3.4.21) lib/sass/stack.rb:88:in `with_import'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+  sass (3.4.21) lib/sass/stack.rb:79:in `block in with_base'
+  sass (3.4.21) lib/sass/stack.rb:115:in `with_frame'
+  sass (3.4.21) lib/sass/stack.rb:79:in `with_base'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:158:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:52:in `visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `block in visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+  sass (3.4.21) lib/sass/tree/visitors/base.rb:36:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:157:in `visit'
+  sass (3.4.21) lib/sass/tree/visitors/perform.rb:8:in `visit'
+  sass (3.4.21) lib/sass/tree/root_node.rb:36:in `css_tree'
+  sass (3.4.21) lib/sass/tree/root_node.rb:20:in `render'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___324473119317327555_70358499970540'
+  actionview (4.2.5.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/tokyo/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/03bba9f03e5a0e15/variables" for 127.0.0.1 at 2016-02-18 10:43:36 +0100
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:44:01 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:47:25 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.7ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 2776ms (Views: 2773.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:47:46 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 2399ms (Views: 2397.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:48:05 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 1947ms (Views: 1944.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:50:09 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 1706ms (Views: 1703.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 10:51:32 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 1937ms (Views: 1935.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:12:42 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 2337ms (Views: 2335.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:13:17 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 1644ms (Views: 1642.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:13:47 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 90ms (Views: 88.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:14:12 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:15:28 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:16:19 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 2146ms (Views: 2144.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:16:46 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 1883ms (Views: 1881.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:17:06 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:18:51 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:20:45 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:21:25 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:23:30 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:23:36 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 122ms (Views: 120.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:23:49 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 11:26:02 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 1790ms (Views: 1788.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 12:01:07 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (23.1ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.7ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (83.8ms)
+Completed 200 OK in 2820ms (Views: 2755.5ms | ActiveRecord: 23.8ms)
+
+
+Started DELETE "/groups/25" for 127.0.0.1 at 2016-02-18 12:01:17 +0100
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WMNGMxOJZhudwAThbe69DugMYyQ95PXd5aH5viRlY4UmTohBVX8aaFCBDohJOOn55nmGYN0j74GIaU2mOCm7GQ==", "id"=>"25"}
+  [1m[36mGroup Load (0.6ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT 1[0m  [["id", 25]]
+  [1m[35m (19.7ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = $1[0m  [["id", 25]]
+  [1m[35m (10.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 35ms (ActiveRecord: 30.8ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 12:01:17 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2016-02-18 12:01:20 +0100
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (2.8ms)
+  Rendered groups/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 218ms (Views: 217.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/groups" for 127.0.0.1 at 2016-02-18 12:01:28 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9CAcIpQLKmYhHxptp3DFfbf9iRbkYyfV9kAEHwcUdByKrdJQ0v1WFexeEASDppGKuYhsUgSkPYmbiLAHG1isgA==", "group"=>{"name"=>"5", "salle"=>"5", "tache"=>"5"}, "commit"=>"Create Group"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "groups" ("name", "salle", "tache", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "5"], ["salle", "5"], ["tache", "5"], ["created_at", "2016-02-18 11:01:28.160450"], ["updated_at", "2016-02-18 11:01:28.160450"]]
+  [1m[36m (24.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 25.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:01:28 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aleatoire" for 127.0.0.1 at 2016-02-18 12:01:31 +0100
+Processing by GroupsController#Rand as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "people" SET "sensei" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["sensei", "f"], ["updated_at", "2016-02-18 11:01:31.990044"], ["id", 56]]
+  [1m[35m (61.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 69]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:01:32.060935"], ["id", 69]]
+  [1m[36m (8.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 47]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:01:32.072472"], ["id", 47]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 56]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:01:32.080742"], ["id", 56]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 49]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 48]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 28], ["updated_at", "2016-02-18 11:01:32.090765"], ["id", 48]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 55]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:01:32.097927"], ["id", 55]]
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 57]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:01:32.105437"], ["id", 57]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 50]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:01:32.113948"], ["id", 50]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 52]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 11:01:32.122353"], ["id", 52]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 65]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 28], ["updated_at", "2016-02-18 11:01:32.130548"], ["id", 65]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 62]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 11:01:32.139802"], ["id", 62]]
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 54]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 11:01:32.147768"], ["id", 54]]
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 58]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 11:01:32.157344"], ["id", 58]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 67]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 28], ["updated_at", "2016-02-18 11:01:32.163776"], ["id", 67]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 66]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 11:01:32.172974"], ["id", 66]]
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 63]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 11:01:32.180851"], ["id", 63]]
+  [1m[35m (5.0ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 53]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 11:01:32.188842"], ["id", 53]]
+  [1m[35m (13.7ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 61]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 11:01:32.205801"], ["id", 61]]
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 60]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 28], ["updated_at", "2016-02-18 11:01:32.213924"], ["id", 60]]
+  [1m[35m (5.2ms)[0m  COMMIT
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 64]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:01:32.223393"], ["id", 64]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 59]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:01:32.230589"], ["id", 59]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 68]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:01:32.239270"], ["id", 68]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 279ms (ActiveRecord: 192.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:01:32 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 136ms (Views: 134.2ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/groups/28" for 127.0.0.1 at 2016-02-18 12:01:58 +0100
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"84sStazXXoNT11AHrzVclqHJmlhkNOuWa6AJ3whvgaqNBtzH6iEi8J6WWm6L4whhr7x/HITz8coGaL3HFCNZNg==", "id"=>"28"}
+  [1m[35mGroup Load (0.4ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = $1  [["id", 28]]
+  [1m[36m (74.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 78ms (ActiveRecord: 75.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-02-18 12:01:58 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2016-02-18 12:02:36 +0100
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (2.7ms)
+  Rendered groups/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/groups" for 127.0.0.1 at 2016-02-18 12:02:42 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqsUlUO2sym1gws6+CChgbW+8BGDg/2HRUMxmxRcdb3gJtrnBUDPWnjCAVPc9vV2u8sVVWNE59soi4WDCBCtIQ==", "group"=>{"name"=>"5", "salle"=>"5", "tache"=>"5"}, "commit"=>"Create Group"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "groups" ("name", "salle", "tache", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "5"], ["salle", "5"], ["tache", "5"], ["created_at", "2016-02-18 11:02:42.114190"], ["updated_at", "2016-02-18 11:02:42.114190"]]
+  [1m[35m (12.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:02:42 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aleatoire" for 127.0.0.1 at 2016-02-18 12:02:45 +0100
+Processing by GroupsController#Rand as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 50]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:02:45.153869"], ["id", 50]]
+  [1m[36m (33.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 58]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:02:45.190441"], ["id", 58]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 66]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:02:45.198428"], ["id", 66]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 63]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 11:02:45.207630"], ["id", 63]]
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 64]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 29], ["updated_at", "2016-02-18 11:02:45.215111"], ["id", 64]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 59]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 11:02:45.225581"], ["id", 59]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 54]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 53]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 69]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 11:02:45.236131"], ["id", 69]]
+  [1m[35m (9.0ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 48]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 29], ["updated_at", "2016-02-18 11:02:45.248888"], ["id", 48]]
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 60]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:02:45.258823"], ["id", 60]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 55]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:02:45.266344"], ["id", 55]]
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 49]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:02:45.273667"], ["id", 49]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 61]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 68]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 29], ["updated_at", "2016-02-18 11:02:45.283976"], ["id", 68]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 67]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:02:45.291408"], ["id", 67]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 62]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:02:45.299187"], ["id", 62]]
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 52]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:02:45.307912"], ["id", 52]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 51]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 11:02:45.315268"], ["id", 51]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 57]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 29], ["updated_at", "2016-02-18 11:02:45.323204"], ["id", 57]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 65]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 11:02:45.333114"], ["id", 65]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 56]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 11:02:45.339822"], ["id", 56]]
+  [1m[35m (5.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 47]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 11:02:45.348517"], ["id", 47]]
+  [1m[35m (4.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 230ms (ActiveRecord: 133.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:02:45 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 102ms (Views: 100.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:05:47 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:05:56 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered groups/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/aleatoire" for 127.0.0.1 at 2016-02-18 12:05:59 +0100
+Processing by GroupsController#Rand as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36mGroup Load (0.6ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 60]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 47]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 11:05:59.505045"], ["id", 47]]
+  [1m[35m (5.9ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 59]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 11:05:59.514161"], ["id", 59]]
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 52]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 11:05:59.522664"], ["id", 52]]
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 61]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 29], ["updated_at", "2016-02-18 11:05:59.530717"], ["id", 61]]
+  [1m[35m (4.9ms)[0m  COMMIT
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 55]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:05:59.541412"], ["id", 55]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 62]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 67]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 11:05:59.551563"], ["id", 67]]
+  [1m[35m (9.1ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 56]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 11:05:59.565283"], ["id", 56]]
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 66]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 29], ["updated_at", "2016-02-18 11:05:59.573033"], ["id", 66]]
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36mGroup Load (0.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 50]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 68]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 11:05:59.586230"], ["id", 68]]
+  [1m[35m (7.8ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 63]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 23], ["updated_at", "2016-02-18 11:05:59.598561"], ["id", 63]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 57]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 24], ["updated_at", "2016-02-18 11:05:59.606451"], ["id", 57]]
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 65]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 29], ["updated_at", "2016-02-18 11:05:59.614412"], ["id", 65]]
+  [1m[35m (4.7ms)[0m  COMMIT
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 49]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 21], ["updated_at", "2016-02-18 11:05:59.624615"], ["id", 49]]
+  [1m[36m (10.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 64]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 22], ["updated_at", "2016-02-18 11:05:59.639489"], ["id", 64]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 69]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 23], ["updated_at", "2016-02-18 11:05:59.648551"], ["id", 69]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 58]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 24], ["updated_at", "2016-02-18 11:05:59.656759"], ["id", 58]]
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 54]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["group_id", 29], ["updated_at", "2016-02-18 11:05:59.664410"], ["id", 54]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 48]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 21], ["updated_at", "2016-02-18 11:05:59.673405"], ["id", 48]]
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "people" SET "group_id" = $1, "updated_at" = $2 WHERE "people"."id" = $3[0m  [["group_id", 22], ["updated_at", "2016-02-18 11:05:59.681113"], ["id", 51]]
+  [1m[35m (4.7ms)[0m  COMMIT
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1[0m  [["id", 53]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 218ms (ActiveRecord: 116.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:05:59 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 117ms (Views: 115.5ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/people/59" for 127.0.0.1 at 2016-02-18 12:06:13 +0100
+Processing by PeopleController#update as JSON
+  Parameters: {"person"=>{"name"=>"Alexis"}, "authenticity_token"=>"wW8AJ7IeMo+zYUD5JjrLYr0ddEO9xJiGKl+g1Rdtn7S/4s5V9OhO/H4gSpAC7J+Vs2iRB10DgtpHlxTNCyFHKA==", "id"=>"59"}
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT 1  [["id", 59]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "people" SET "name" = $1, "updated_at" = $2 WHERE "people"."id" = $3  [["name", "Alexis"], ["updated_at", "2016-02-18 11:06:13.148230"], ["id", 59]]
+  [1m[36m (24.0ms)[0m  [1mCOMMIT[0m
+  Rendered people/show.json.jbuilder (0.5ms)
+Completed 200 OK in 63ms (Views: 19.5ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:06:14 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 12:06:33 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mPerson Load (23.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered groups/index.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 98ms (Views: 74.0ms | ActiveRecord: 23.7ms)

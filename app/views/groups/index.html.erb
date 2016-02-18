@@ -2,8 +2,9 @@
 
   <h1>Organization</h1>
   <div class="row">
+
     <% @groups.each do |group| %>
-    <div class="col-md-offset-1 col-md-2 inline">
+    <div class="col-md-2 inline">
       <strong><%= group.name %>
         <%= group.salle %>
         <%= group.tache %></strong>
@@ -18,19 +19,21 @@
         <% end %>
       </div>
       <br>
-      <%= link_to 'Edit', edit_group_path(group) %>
-      <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      <span class="glyphicon glyphicon-pencil"> <%= link_to 'Edit', edit_group_path(group) %></span>
+      <span class="glyphicon glyphicon-trash"> <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></span>
     </div>
     <% end %>
   </div>
 
-  <%= link_to 'New Group', new_group_path %>
+<br>
+  <div class="the_new_group"><span class="glyphicon glyphicon-plus-sign"><%= link_to 'New Group', new_group_path %></span></div>
 
   <br>
 
   <h1>Listing People</h1>
 
-  <div id="butn"><%= link_to 'Random', aleatoire_path %></div>
+  <div id="butn"><span class="glyphicon glyphicon-refresh"><%= link_to 'Random', aleatoire_path %></span></div>
 
   <table class="table">
     <thead>
