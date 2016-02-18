@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="container">
+<h1>Listing People</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Tel</th>
+      <th>Group</th>
+      <th>Sensei</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.name %></td>
+        <td><%= person.email %></td>
+        <td>0<%= person.tel %></td>
+        <td><%= person.group_id %></td>
+        <td><%= person.sensei %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+</div>

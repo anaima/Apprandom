@@ -1,0 +1,65 @@
+<div class="container">
+
+  <h1>Organization</h1>
+  <div class="row">
+    <% @groups.each do |group| %>
+    <div class="col-md-3 inline">
+      <strong><%= group.name %>
+        <%= group.salle %>
+        <%= group.tache %></strong>
+      <br>
+      <div>
+        <% @people.each do |gens|%>
+        <% if group.id == gens.group_id %>
+        <br><%= best_in_place gens, :name%>
+        <%= best_in_place gens, :sensei, :as => :select, :collection => {"1" => "Sensei", "2" => "student"} %>
+        <% end %>
+
+        <% end %>
+      </div>
+
+      <%= link_to 'Edit', edit_group_path(group) %>
+      <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    <% end %>
+  </div>
+
+  <%= link_to 'New Group', new_group_path %>
+
+  <br>
+
+  <h1>Listing People</h1>
+
+  <div id="butn"><%= link_to 'Random', aleatoire_path %></div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <!-- <th>Email</th> -->
+        <!-- <th>Tel</th> -->
+        <!-- <th>Group</th> -->
+        <th>Sensei</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @people.each do |person| %>
+      <tr>
+        <td><%= person.name %></td>
+        <!-- <td><%= person.email %></td> -->
+        <!-- <td><%= person.tel %></td> -->
+        <!-- <td><%= person.group_id %></td> -->
+        <td><%= person.sensei %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+/* Activating Best In Place */
+$(".best_in_place").best_in_place();
+});
+</script>

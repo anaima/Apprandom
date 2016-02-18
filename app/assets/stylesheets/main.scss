@@ -1,0 +1,30 @@
+//////////////////////////   NAVBAR  ///////////////////////////////////:
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #DEF9FF;
+}
+
+.navbar-nav li a:hover {
+    color: #C9628D !important;
+}  //////////////////////////////   /NAVBAR ///////////////////////////////
+
+//////////////////////////// FOOTER  //////////////////////////////////////
+.footer {
+    background-color: #DEF9FF;
+    color: #ffffff;
+    height: 120px;
+}  ///////////////////////     /FOOTER ///////////////////////////////////
+
+h1 {
+  text-align: center;
+}
+/////////////////////////// BUTTON ///////////////////////////////////////
+.inline {
+  display: inline-block;
+}
