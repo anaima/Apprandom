@@ -46,6 +46,10 @@ group :development do
   gem 'pry'
   gem 'better_errors'
   gem 'quiet_assets'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
 end
 gem 'bootstrap_form'
 gem 'bootstrap-sass', '~> 3.3.6'
